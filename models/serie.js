@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
 
-const CommentSchema = mongoose.Schema({
+const CommentSchema = new mongoose.Schema({
     comment: String
 })
 
-const SerieSchema = mongoose.Schema({
+const SerieSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
